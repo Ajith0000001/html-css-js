@@ -3,7 +3,7 @@
   margin: 0;
 }
 nav {
-  background-color: whitesmoke;
+  background-color:#ACD2E2;
 }
 .nav-header {
   display: flex;
@@ -16,6 +16,9 @@ nav {
   color: rgb(3, 3, 7);
   background-color: transparent;
   border-color: transparent;
+}
+.nav-toggle:hover{
+  background-color:blue;
 }
 h1 {
   height: 40px;
@@ -39,7 +42,7 @@ h1 {
 .links-container {
   height: 0px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.10s;
 }
 @media screen and (min-width: 700px) {
   nav {
