@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <h1>Ajjas!!!</h1>
+
+        <button class="nav-toggle" id="nav-bar" onclick="handleClick()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="links-container" id="active">
+        <ul class="links">
+          <li><a href="#">home</a></li>
+          <li><a href="#">project</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      let isopen = false;
+      const active = document.getElementById("active");
+      function handleClick() {
+        isopen = !isopen;
+        if (isopen) {
+          active.style.height = "200px";
+        } else if (isopen == false) {
+          active.style.height = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
